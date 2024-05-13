@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Who's Behind Social Media?</title>
+    <link rel="stylesheet" href="page2_stylesheet.css" />
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <ul class="navbar">
+        <li><a href="index_template.html">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#companies">Companies</a></li>
+        <li><a href="#influencers">Influencers</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+      </ul>
+    </nav>
+
+    <!-- Main Content Area -->
+    <main>
+      <!-- About Section -->
+      <section id="about">
+        <h1>Who's Behind Social Media?</h1>
+        <p>
+          Social media is powered by a diverse range of entities, including
+          companies, influencers, and users.
+        </p>
+        <p>
+          Companies develop and maintain social media platforms, influencers
+          shape trends and content, and users contribute to the vibrant online
+          community.
+        </p>
+      </section>
+
+      <!-- Companies Section -->
+      <section id="companies">
+        <h2>Social Media Companies</h2>
+        <p>
+          Major social media platforms are created and managed by large
+          corporations with global reach.
+        </p>
+        <ul>
+          <li>Facebook, Inc. - Owner of Facebook, Instagram, WhatsApp</li>
+          <li>Twitter, Inc. - Operator of Twitter</li>
+          <li>
+            Meta Platforms, Inc. - Formerly known as Facebook, Inc., oversees
+            Facebook's parent company
+          </li>
+        </ul>
+      </section>
+
+      <!-- Influencers Section -->
+      <section id="influencers">
+        <h2>Social Media Influencers</h2>
+        <p>
+          Influencers are individuals who have significant followings on social
+          media platforms and influence their audience's opinions and behaviors.
+        </p>
+        <ul>
+          <li>
+            Kylie Jenner - Influential figure in the beauty and fashion industry
+          </li>
+          <li>PewDiePie - Prominent YouTuber known for gaming content</li>
+          <li>Charli D'Amelio - TikTok star with millions of followers</li>
+        </ul>
+      </section>
+
+      <!-- How They Use Our Information Section -->
+      <section id="info-usage">
+        <h2>How They Use Our Information</h2>
+        <p>
+          Social media companies collect and analyze vast amounts of user data
+          to personalize content, target advertisements, and improve user
+          experiences.
+        </p>
+        <ul>
+          <li>
+            Personalized Content: Algorithms use user preferences and behavior
+            to tailor content feeds.
+          </li>
+          <li>
+            Targeted Advertising: User data is utilized to deliver relevant ads
+            based on interests and demographics.
+          </li>
+          <li>
+            Product Development: Insights from user data inform the development
+            of new features and services.
+          </li>
+          <li>
+            Data Analytics: Companies analyze trends and patterns to optimize
+            platform performance and user engagement.
+          </li>
+        </ul>
+      </section>
+
+      <!-- Portfolio Links Section -->
+      <section id="portfolio">
+        <h2>Explore More Cool Stuff</h2>
+        <div id="menu">
+          <p>Check out these fun pages:</p>
+          <select id="portfolio-dropdown">
+            <option value="">Select a page</option>
+            <option value="#homepage-content">Home</option>
+            <option value="content_template.html">
+              Social Media Algorithms 101
+            </option>
+            <option value="Week2.html">Whos Behind Social Media?</option>
+            <option value="Week3.html">
+              How Social Media Shapes Our World
+            </option>
+          </select>
+          <button id="go-button">Let's Go!</button>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="footer">
+      <hr />
+      <p>
+        Student Number: 2603803B <br />
+        Submitted in fulfillment of MAD(B)
+      </p>
+    </footer>
+    <!-- JavaScript for portfolio navigation -->
+    <script>
+      document
+        .getElementById("go-button")
+        .addEventListener("click", function () {
+          var dropdown = document.getElementById("portfolio-dropdown");
+          var selectedPage = dropdown.value;
+          if (selectedPage) {
+            window.location.href = selectedPage;
+          }
+        });
+    </script>
+  </body>
+</html>

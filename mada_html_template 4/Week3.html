@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>How Social Media Shapes Our World</title>
+    <link rel="stylesheet" href="page3_stylesheet.css" />
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <ul class="navbar">
+        <li><a href="index_template.html">Home</a></li>
+        <li>
+          <a href="#how-social-media-shapes"
+            >How social media shapes our world</a
+          >
+        </li>
+        <li><a href="#interactive-content">Impact</a></li>
+        <li>
+          <a href="#for-younger-generation"
+            >Social media for the younger generation</a
+          >
+        </li>
+        <li><a href="#portfolio">Portfolio</a></li>
+      </ul>
+    </nav>
+
+    <!-- Main Content Area -->
+    <main>
+      <!-- How Social Media Shapes Our World Section -->
+      <section id="how-social-media-shapes">
+        <h1>How Social Media Shapes Our World</h1>
+        <p>
+          Social media has a profound impact on various aspects of society,
+          including communication, culture, politics, and economy. Explore the
+          interactive content below to learn more about the influence of social
+          media.
+        </p>
+        <!-- Interactive Content -->
+        <div id="interactive-content">
+          <button id="impact-button">Show Impact Details</button>
+          <div id="impact-details" style="display: none">
+            <p>Here are some ways social media shapes our world:</p>
+            <ul>
+              <li>Facilitates instant communication and connection</li>
+              <li>Enables the spread of information and ideas</li>
+              <li>Influences consumer behavior and purchasing decisions</li>
+              <li>Affects political discourse and public opinion</li>
+              <li>
+                Creates new opportunities for businesses and entrepreneurs
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Social Media for Younger Generation Section -->
+      <section id="for-younger-generation">
+        <h2>Social Media for the Younger Generation</h2>
+        <p>
+          Social media plays a significant role in the lives of younger
+          individuals, offering platforms for self-expression, creativity, and
+          social interaction. It has become a primary means of communication and
+          entertainment for the younger generation.
+        </p>
+        <p>
+          Features such as stories, filters, and short-form videos resonate
+          particularly well with younger users, shaping their online experiences
+          and interactions.
+        </p>
+        <p>
+          However, it's essential for young users to be aware of the impact
+          social media can have on their mental health and well-being. Excessive
+          use can lead to feelings of inadequacy, anxiety, and depression. It's
+          crucial for young users to balance their online and offline activities
+          and prioritize their mental health.
+        </p>
+        <p>
+          Additionally, staying safe online is paramount. Young users should be
+          cautious about the information they share, avoid interacting with
+          strangers, and be mindful of their digital footprint. Setting privacy
+          settings, using strong passwords, and being vigilant against
+          cyberbullying are essential practices for maintaining online safety.
+        </p>
+        <p>
+          Educating young users about digital literacy and responsible online
+          behavior is crucial for navigating the digital landscape safely and
+          responsibly.
+        </p>
+      </section>
+
+      <!-- Portfolio Links Section -->
+      <section id="portfolio">
+        <h2>Explore More Cool Stuff</h2>
+        <div id="menu">
+          <p>Check out these fun pages:</p>
+          <select id="portfolio-dropdown">
+            <option value="">Select a page</option>
+            <option value="index_template.html">Home</option>
+            <option value="content_template.html">
+              Social Media Algorithms 101
+            </option>
+            <option value="Week2.html">Who's Behind Social Media?</option>
+            <option value="Week3.html">
+              How Social Media Shapes Our World
+            </option>
+          </select>
+          <button id="go-button">Let's Go!</button>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="footer">
+      <hr />
+      <p>
+        Student Number: 2603803B <br />
+        Submitted in fulfillment of MAD(B)
+      </p>
+    </footer>
+
+    <!-- JavaScript for interactive content -->
+    <script>
+      document
+        .getElementById("impact-button")
+        .addEventListener("click", function () {
+          var impactDetails = document.getElementById("impact-details");
+          if (impactDetails.style.display === "none") {
+            impactDetails.style.display = "block";
+            document.getElementById("impact-button").textContent =
+              "Hide Impact";
+          } else {
+            impactDetails.style.display = "none";
+            document.getElementById("impact-button").textContent =
+              "Show Impact";
+          }
+        });
+
+      document
+        .getElementById("go-button")
+        .addEventListener("click", function () {
+          var dropdown = document.getElementById("portfolio-dropdown");
+          var selectedPage = dropdown.value;
+          if (selectedPage) {
+            window.location.href = selectedPage;
+          }
+        });
+    </script>
+  </body>
+</html>

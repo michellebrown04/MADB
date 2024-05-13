@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Social Media Algorithms and Information Consumption</title>
+    <link rel="stylesheet" href="page1_stylesheet.css" />
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <ul class="navbar">
+        <li><a href="index_template.html">Return to Homepage</a></li>
+        <li><a href="#introduction">Introduction</a></li>
+        <li><a href="#how-they-work">How Algorithms Work</a></li>
+        <li><a href="#video">Explainer Video</a></li>
+        <li><a href="#impact">Impact on Consumption</a></li>
+        <li><a href="#footer">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Main Content Area -->
+    <main>
+      <!-- Introduction -->
+      <section id="introduction">
+        <h1>What's Up with Social Media Algorithms?</h1>
+        <p>
+          Social media algorithms totally change how we see stuff online. They
+          shape what pops up in our feeds and what we spend time looking at.
+        </p>
+      </section>
+
+      <!-- How Social Media Algorithms Work -->
+      <section id="how-they-work">
+        <h2>How Do These Algorithms Even Work?</h2>
+        <p>
+          Social media algorithms are like super-smart bots that check out what
+          we're into, what we click on, and what we share. Then, they use that
+          info to show us more stuff we might like.
+        </p>
+        <ul>
+          <li>
+            Cool Stuff First: They show us posts and videos they think we'll be
+            into, based on what we've liked before.
+          </li>
+          <li>
+            Popular Picks: The stuff that lots of people are liking and sharing
+            gets bumped up, so we're more likely to see it.
+          </li>
+          <li>
+            Checking Us Out: They keep an eye on what we're up to, like what
+            we're searching for and who we're chatting with, to guess what we
+            might be interested in next.
+          </li>
+          <li>
+            In the Moment: They're always looking out for the latest hot topics
+            and trends, so they can show us what's happening right now.
+          </li>
+        </ul>
+      </section>
+
+      <!-- YouTube Video -->
+      <section id="video">
+        <h2>Got Questions? Check This Out!</h2>
+        <div class="video-container">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/F5tz887wXCY"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </section>
+
+      <!-- Impact on Information Consumption -->
+      <section id="impact">
+        <h2>How It Affects What We See</h2>
+        <p>
+          Social media algorithms totally change how we see stuff online. They
+          shape what pops up in our feeds and what we spend time looking at.
+        </p>
+        <ul>
+          <li>
+            <strong>Living in a Bubble:</strong> Social media keeps us in our
+            own little bubbles, only showing us stuff it thinks we'll like. That
+            means we might miss out on seeing different stuff or hearing other
+            people's opinions.
+          </li>
+          <li>
+            <strong>Missing Out:</strong> Sometimes, we don't get to see a whole
+            range of different ideas or viewpoints because the algorithms keep
+            showing us the same stuff over and over.
+          </li>
+          <li>
+            <strong>Getting Stuck:</strong> It's easy to end up in an echo
+            chamber, where we only see stuff that agrees with what we already
+            think. That makes it harder to hear different perspectives.
+          </li>
+          <li>
+            <strong>Not Always True:</strong> Social media can sometimes spread
+            false info without us even realizing it. That's not cool!
+          </li>
+          <li>
+            <strong>Click, Click, Click:</strong> Sometimes, the stuff that gets
+            shown to us is all about getting us to click on it, even if it's not
+            that important. It's like they're trying to grab our attention!
+          </li>
+          <li>
+            <strong>Tricked:</strong> Sometimes, people try to trick us by using
+            sneaky tactics to make us believe stuff or do stuff we wouldn't
+            normally do.
+          </li>
+        </ul>
+      </section>
+
+      <!-- Portfolio Links Section -->
+      <section id="portfolio">
+        <h2>Check Out Some More Cool Stuff</h2>
+        <p>Got time to explore? Check out these pages:</p>
+        <select id="portfolio-dropdown">
+          <option value="">Select a page</option>
+          <option value="index_template.html">Home</option>
+          <option value="content_template.html">
+            Social Media Algorithms 101
+          </option>
+          <option value="Week2.html">Who's Behind Social Media?</option>
+          <option value="Week3.html">How Social Media Shapes Our World</option>
+        </select>
+        <button id="go-button">Let's Go!</button>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="footer">
+      <hr />
+      <p>
+        Student Number: 2603803B <br />
+        Submitted in fulfillment of MAD(B)
+      </p>
+    </footer>
+    <script>
+      document
+        .getElementById("go-button")
+        .addEventListener("click", function () {
+          var dropdown = document.getElementById("portfolio-dropdown");
+          var selectedPage = dropdown.value;
+          if (selectedPage) {
+            window.location.href = selectedPage;
+          }
+        });
+    </script>
+  </body>
+</html>

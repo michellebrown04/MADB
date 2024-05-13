@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homepage</title>
+    <link rel="stylesheet" href="stylesheet.css" />
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <ul class="navbar">
+        <li><a href="#homepage-content">Home</a></li>
+        <li><a href="#quiz-section">Quiz</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#footer">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Main Content Area -->
+    <div id="homepage-content">
+      <div class="container">
+        <h1>Let's Talk About Social Media Algorithms</h1>
+        <h2>Explore the World of Social Media</h2>
+        <p>
+          Hey there! Welcome to my project page. We're diving deep into social
+          media algorithms and how they affect us. Stick around to learn more!
+        </p>
+
+        <!-- Quiz Section -->
+        <section id="quiz-section" class="quiz">
+          <h2>Social Media Preference Quiz</h2>
+          <form id="quiz-form">
+            <!-- Question 1 -->
+            <div class="question">
+              <p>1. How often do you check social media?</p>
+              <label
+                ><input type="radio" name="q1" value="4" /> Several times a
+                day</label
+              ><br />
+              <label
+                ><input type="radio" name="q1" value="3" /> Once a day</label
+              ><br />
+              <label
+                ><input type="radio" name="q1" value="2" /> Few times a
+                week</label
+              ><br />
+              <label
+                ><input type="radio" name="q1" value="1" /> Once a week or
+                less</label
+              ><br />
+            </div>
+            <!-- Question 2 -->
+            <div class="question">
+              <p>2. How important is social media in your daily life?</p>
+              <label
+                ><input type="radio" name="q2" value="4" /> Very important,
+                can't live without it</label
+              ><br />
+              <label
+                ><input type="radio" name="q2" value="3" /> Moderately
+                important</label
+              ><br />
+              <label
+                ><input type="radio" name="q2" value="2" /> Not very
+                important</label
+              ><br />
+              <label
+                ><input type="radio" name="q2" value="1" /> Not important at
+                all</label
+              ><br />
+            </div>
+            <!-- Question 3 -->
+            <div class="question">
+              <p>3. How do you feel after spending time on social media?</p>
+              <label
+                ><input type="radio" name="q3" value="4" /> Energized and
+                happy</label
+              ><br />
+              <label
+                ><input type="radio" name="q3" value="3" /> Neutral, no
+                significant change</label
+              ><br />
+              <label
+                ><input type="radio" name="q3" value="2" /> Tired or
+                drained</label
+              ><br />
+              <label
+                ><input type="radio" name="q3" value="1" /> Stressed or
+                anxious</label
+              ><br />
+            </div>
+            <!-- Question 4 -->
+            <div class="question">
+              <p>4. How much time do you spend on social media daily?</p>
+              <label
+                ><input type="radio" name="q4" value="4" /> More than 4
+                hours</label
+              ><br />
+              <label><input type="radio" name="q4" value="3" /> 2-4 hours</label
+              ><br />
+              <label><input type="radio" name="q4" value="2" /> 1-2 hours</label
+              ><br />
+              <label
+                ><input type="radio" name="q4" value="1" /> Less than 1
+                hour</label
+              ><br />
+            </div>
+            <!-- Question 5 -->
+            <div class="question">
+              <p>5. How often do you post content on social media?</p>
+              <label
+                ><input type="radio" name="q5" value="4" /> Multiple times a
+                day</label
+              ><br />
+              <label
+                ><input type="radio" name="q5" value="3" /> Once a day</label
+              ><br />
+              <label
+                ><input type="radio" name="q5" value="2" /> Few times a
+                week</label
+              ><br />
+              <label
+                ><input type="radio" name="q5" value="1" /> Rarely or
+                never</label
+              ><br />
+            </div>
+            <!-- Question 6 -->
+            <div class="question">
+              <p>6. Do you feel addicted to social media?</p>
+              <label
+                ><input type="radio" name="q6" value="4" /> Yes,
+                definitely</label
+              ><br />
+              <label
+                ><input type="radio" name="q6" value="3" /> Maybe,
+                sometimes</label
+              ><br />
+              <label
+                ><input type="radio" name="q6" value="2" /> Not really</label
+              ><br />
+              <label
+                ><input type="radio" name="q6" value="1" /> Not at all</label
+              ><br />
+            </div>
+            <!-- Question 7 -->
+            <div class="question">
+              <p>
+                7. How do you feel about social media's impact on your mental
+                health?
+              </p>
+              <label
+                ><input type="radio" name="q7" value="1" /> It negatively
+                affects my mental health</label
+              ><br />
+              <label
+                ><input type="radio" name="q7" value="2" /> It has both positive
+                and negative effects</label
+              ><br />
+              <label
+                ><input type="radio" name="q7" value="3" /> It doesn't really
+                affect my mental health</label
+              ><br />
+              <label
+                ><input type="radio" name="q7" value="4" /> It positively
+                impacts my mental health</label
+              ><br />
+            </div>
+            <button type="submit" id="submit-btn">Submit</button>
+            <button type="button" id="reset-btn">Reset</button>
+          </form>
+          <div id="result"></div>
+          <!-- Image -->
+          <img
+            src="images/socialmedia.jpg"
+            alt="Social Media Image"
+            class="quiz-image"
+          />
+        </section>
+
+        <!-- Portfolio Links Section -->
+        <section id="portfolio">
+          <h2>Explore More Cool Stuff</h2>
+          <div id="menu">
+            <p>Check out these fun pages:</p>
+            <select id="portfolio-dropdown">
+              <option value="">Select a page</option>
+              <option value="#homepage-content">Home</option>
+              <option value="content_template.html">
+                Social Media Algorithms 101
+              </option>
+              <option value="Week2.html">Whos Behind Social Media?</option>
+              <option value="Week3.html">
+                How Social Media Shapes Our World
+              </option>
+            </select>
+            <button id="go-button">Let's Go!</button>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer id="footer">
+      <hr />
+      <p>
+        Student Number: 2603803B <br />
+        Submitted in fulfillment of MAD(B)
+      </p>
+    </footer>
+
+    <!-- JavaScript for the quiz and portfolio navigation -->
+    <script src="interactive_quiz.js"></script>
+    <script>
+      document
+        .getElementById("go-button")
+        .addEventListener("click", function () {
+          var dropdown = document.getElementById("portfolio-dropdown");
+          var selectedPage = dropdown.value;
+          if (selectedPage) {
+            window.location.href = selectedPage;
+          }
+        });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,175 @@
+/* Resetting default styles */
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Setting up typography */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333; 
+  background-color: #f9f9f9; 
+}
+
+h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #333; 
+}
+
+h2 {
+  font-size: 28px;
+  margin-bottom: 15px;
+  color: #333; 
+}
+
+p {
+  margin-bottom: 15px;
+}
+
+/* Header and Navigation */
+.navbar {
+  background-color: #333;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  margin: 0 20px;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.navbar a:hover {
+  color: #1da1f2; 
+}
+
+/* Main Content Area */
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 30px;
+  background-color: #fff;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+/* Quiz Styles */
+.quiz {
+  border: 2px solid #1da1f2; 
+  padding: 30px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* CSS for the image */
+.quiz-image {
+  width: 100%;
+  border-radius: 10px;
+  margin-top: 30px;
+}
+
+/* CSS for portfolio links */
+.portfolio-link {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 10px 0;
+  text-decoration: none;
+  color: #333;
+  border: 2px solid #1da1f2; 
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.portfolio-link:hover {
+  background-color: #1da1f2; 
+  color: white;
+}
+
+/* Additional Color Styles for Homepage */
+body {
+  background-color: #f9f9f9;
+}
+
+h1,
+h2 {
+  color: #333;
+}
+
+.navbar {
+  background-color: #333;
+}
+
+.navbar a {
+  color: white; 
+}
+
+.navbar a:hover {
+  color: #1da1f2; 
+}
+
+.container {
+  background-color: #f2f2f2; 
+}
+
+.quiz {
+  border-color: #1da1f2; 
+}
+
+#portfolio {
+  background-color: #f2f2f2; 
+}
+
+.portfolio-link {
+  color: #333; 
+  border-color: #1da1f2; 
+}
+
+.portfolio-link:hover {
+  background-color: #1da1f2; 
+  color: white; /
+}
+
+/* Additional Color Accents */
+.quiz h2 {
+  color: #1da1f2; 
+}
+
+.quiz p {
+  color: #666; 
+}
+
+/* Footer */
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #333; 
+    color: #666; 
+    text-align: center; 
+    padding: 20px 0; 
+  }
+  
+  .footer p {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  
+  
